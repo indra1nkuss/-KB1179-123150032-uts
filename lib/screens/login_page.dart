@@ -8,10 +8,15 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  final TextEditingController _usernameCtrl = TextEditingController();
+  final TextEditingController _passwordCtrl = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
+
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text("Halaman Login")),
+    return Scaffold(
+      appBar: AppBar(title: const Text("Login")),
+      body: const Center(child: Text("Form login disini")),
     );
   }
 }

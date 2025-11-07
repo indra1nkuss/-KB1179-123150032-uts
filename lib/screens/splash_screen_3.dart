@@ -5,10 +5,18 @@ class SplashScreen3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Color(0xFFFFF8F6),
+    return Scaffold(
+      backgroundColor: const Color(0xFFFFF8F6),
       body: Center(
-        child: Text("Splash Screen 3"),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const [
+              Text("Splash Screen 3 layout"),
+            ],
+          ),
+        ),
       ),
     );
   }

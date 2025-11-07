@@ -13,7 +13,11 @@ class SplashScreen3 extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
-              Text("Splash Screen 3 layout"),
+              CircleAvatar(
+                radius: 80,
+                backgroundColor: Color(0xFFFFE5D4),
+                backgroundImage: AssetImage("assets/images/splash3.png"),
+              ),
             ],
           ),
         ),

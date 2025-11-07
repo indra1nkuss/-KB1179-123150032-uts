@@ -29,6 +29,44 @@ class SplashScreen2 extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 16, color: Colors.black54),
               ),
+            
+              // 🔘 Indikator bulat (halaman kedua aktif)
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  DotIndicator(isActive: false),
+                  DotIndicator(isActive: true),
+                  DotIndicator(isActive: false),
+                ],
+              ),
+              const SizedBox(height: 40),
+
+              // Tombol Next
+              ElevatedButton(
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const SplashScreen3()),
+                ),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFFFFE9E0),
+                  foregroundColor: Colors.deepOrange,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
+                  elevation: 1,
+                ),
+                child: const Text("Next"),
+              ),
+
+              const SizedBox(height: 60),
+
+              // NIM di bawah
+              const Text(
+                "NIM: 1123150032",
+                style: TextStyle(fontSize: 12, color: Colors.grey),
+              ),
             ],
           ),
         ),
@@ -36,6 +74,8 @@ class SplashScreen2 extends StatelessWidget {
     );
   }
 }
+
+
 
 
 // 🔘 Widget indikator bulat

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'splash_screen_3.dart';
 
 class SplashScreen2 extends StatelessWidget {
   const SplashScreen2({super.key});
@@ -12,25 +13,29 @@ class SplashScreen2 extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 24),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-            CircleAvatar(
+            children: [
+              
+              const CircleAvatar(
                 radius: 80,
                 backgroundColor: Color(0xFFFFE5D4),
                 backgroundImage: AssetImage("assets/images/splash2.png"),
               ),
-              SizedBox(height: 24),
-              Text(
+              const SizedBox(height: 24),
+
+          
+              const Text(
                 "Welcome",
                 style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 8),
-              Text(
+              const SizedBox(height: 8),
+              const Text(
                 "Stay positive and keep moving!",
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 16, color: Colors.black54),
               ),
-            
-              // 🔘 Indikator bulat (halaman kedua aktif)
+              const SizedBox(height: 24),
+
+              
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
@@ -41,7 +46,7 @@ class SplashScreen2 extends StatelessWidget {
               ),
               const SizedBox(height: 40),
 
-              // Tombol Next
+              
               ElevatedButton(
                 onPressed: () => Navigator.push(
                   context,
@@ -62,7 +67,7 @@ class SplashScreen2 extends StatelessWidget {
 
               const SizedBox(height: 60),
 
-              // NIM di bawah
+            
               const Text(
                 "NIM: 1123150032",
                 style: TextStyle(fontSize: 12, color: Colors.grey),
@@ -76,9 +81,6 @@ class SplashScreen2 extends StatelessWidget {
 }
 
 
-
-
-// 🔘 Widget indikator bulat
 class DotIndicator extends StatelessWidget {
   final bool isActive;
   const DotIndicator({super.key, required this.isActive});

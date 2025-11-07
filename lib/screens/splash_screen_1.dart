@@ -43,6 +43,49 @@ class SplashScreen1 extends StatelessWidget {
   }
 }
 
+// Indikator bulat
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  DotIndicator(isActive: true),
+                  DotIndicator(isActive: false),
+                  DotIndicator(isActive: false),
+                ],
+              ),
+              const SizedBox(height: 40),
+
+              // Tombol Next
+              ElevatedButton(
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const SplashScreen2()),
+                ),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFFFFE9E0),
+                  foregroundColor: Colors.deepOrange,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
+                  elevation: 1,
+                ),
+                child: const Text("Next"),
+              ),
+              const SizedBox(height: 60),
+
+              // NIM
+              const Text(
+                "NIM: 1123150032",
+                style: TextStyle(fontSize: 12, color: Colors.grey),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
 
 // 🔘 Widget Indikator Bulat
 class DotIndicator extends StatelessWidget {

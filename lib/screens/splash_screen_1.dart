@@ -18,7 +18,7 @@ class SplashScreen1 extends StatelessWidget {
               const CircleAvatar(
                 radius: 80,
                 backgroundColor: Color(0xFFFFD9CC),
-                backgroundImage: AssetImage("assets/images/splash1.png"),
+                backgroundImage: AssetImage("assets/images/logo_energi.jpg"),
               ),
               const SizedBox(height: 24),
 
@@ -29,7 +29,7 @@ class SplashScreen1 extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               const Text(
-                "Don't forget to learn everyday!",
+                "Yuk Kita Beralih Ke Energi Hijau Demi Bumi Kita Bahagia",
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 16, color: Colors.black54),
               ),

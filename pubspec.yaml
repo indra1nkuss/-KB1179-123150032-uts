@@ -56,6 +56,11 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - assets/images/logo_energi.jpg
+    - assets/images/logo_energi1.jpg
+    - assets/images/logo_energi2.png
+    - assets/images/cyber.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

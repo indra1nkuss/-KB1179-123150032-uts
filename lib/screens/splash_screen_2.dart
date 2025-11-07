@@ -18,7 +18,7 @@ class SplashScreen2 extends StatelessWidget {
               const CircleAvatar(
                 radius: 80,
                 backgroundColor: Color(0xFFFFE5D4),
-                backgroundImage: AssetImage("assets/images/splash2.png"),
+                backgroundImage: AssetImage("assets/images/logo_energi1.jpg"),
               ),
               const SizedBox(height: 24),
 
@@ -29,7 +29,7 @@ class SplashScreen2 extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               const Text(
-                "Stay positive and keep moving!",
+                "Gunakan Energy Terbarukan Untuk Mengurangi Emisi!",
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 16, color: Colors.black54),
               ),

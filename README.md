@@ -1,32 +1,16 @@
-# Aplikasi Flutter - Membuat Tampilan Splash Screen & Login Page
+# ujian_indra_1123150032
 
-## Identitas
-**Nama:** Indra Nurul Kusuma  
-**NIM:** 1123150032  
+A new Flutter project.
 
----
+## Getting Started
 
-## Hasil Screenshot
+This project is a starting point for a Flutter application.
 
-### Halaman Splash Screen 1
-![Splash Screen 1](assets/images/screenshoot/Splashscreen1.png)
+A few resources to get you started if this is your first Flutter project:
 
-### Halaman Splash Screen 2
-![Splash Screen 2](assets/images/screenshoot/Splashscreen2.png)
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-### Halaman Splash Screen 3
-![Splash Screen 3](assets/images/screenshoot/Splashscreen3.png)
-
-### Halaman Page Login
-![Halaman Login](assets/images/screenshoot/Pagelogin.png)
-
----
-
-## Cara Menjalankan Project
-
-1. Buka project ini di **Visual Studio Code**.  
-2. Pastikan kamu sudah menjalankan **Ispect** sebagai simulator.  
-3. Klik menu **Toggle Device** → pilih tampilan **Mobile** (misalnya: Pixel 7, iPhone 14, dll).  
-4. Tekan tombol **Run ▶️** di pojok kanan atas, atau jalankan lewat terminal:
-   ```bash
-   flutter run
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

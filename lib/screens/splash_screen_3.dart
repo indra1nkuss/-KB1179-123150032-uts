@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'login_page.dart';
 
-// ✅ SplashScreen3 dengan indikator bulat (halaman ke-3 aktif)
 class SplashScreen3 extends StatelessWidget {
   const SplashScreen3({super.key});
 
@@ -15,7 +14,7 @@ class SplashScreen3 extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // Gambar lingkaran
+              
               const CircleAvatar(
                 radius: 80,
                 backgroundColor: Color(0xFFFFE5D4),
@@ -23,7 +22,7 @@ class SplashScreen3 extends StatelessWidget {
               ),
               const SizedBox(height: 24),
 
-              // Judul dan teks
+          
               const Text(
                 "Welcome",
                 style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
@@ -36,7 +35,7 @@ class SplashScreen3 extends StatelessWidget {
               ),
               const SizedBox(height: 24),
 
-              // 🔘 Indikator bulat (halaman ketiga aktif)
+          
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
@@ -47,7 +46,7 @@ class SplashScreen3 extends StatelessWidget {
               ),
               const SizedBox(height: 40),
 
-              // Tombol Go to Login
+              
               ElevatedButton(
                 onPressed: () => Navigator.pushReplacement(
                   context,
@@ -71,7 +70,7 @@ class SplashScreen3 extends StatelessWidget {
 
               const SizedBox(height: 60),
 
-              // NIM di bawah
+              
               const Text(
                 "NIM: 1123150032",
                 style: TextStyle(fontSize: 12, color: Colors.grey),
@@ -84,7 +83,7 @@ class SplashScreen3 extends StatelessWidget {
   }
 }
 
-// 🔘 Widget indikator bulat reusable
+
 class DotIndicator extends StatelessWidget {
   final bool isActive;
   const DotIndicator({super.key, required this.isActive});

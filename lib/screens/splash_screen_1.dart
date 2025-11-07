@@ -14,7 +14,7 @@ class SplashScreen1 extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // Gambar lingkaran
+              
               const CircleAvatar(
                 radius: 80,
                 backgroundColor: Color(0xFFFFD9CC),
@@ -22,7 +22,7 @@ class SplashScreen1 extends StatelessWidget {
               ),
               const SizedBox(height: 24),
 
-              // Judul & deskripsi
+              
               const Text(
                 "Welcome",
                 style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
@@ -34,16 +34,8 @@ class SplashScreen1 extends StatelessWidget {
                 style: TextStyle(fontSize: 16, color: Colors.black54),
               ),
               const SizedBox(height: 24),
-          
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
 
-// Indikator bulat
+              
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
@@ -54,7 +46,7 @@ class SplashScreen1 extends StatelessWidget {
               ),
               const SizedBox(height: 40),
 
-              // Tombol Next
+              
               ElevatedButton(
                 onPressed: () => Navigator.push(
                   context,
@@ -74,7 +66,7 @@ class SplashScreen1 extends StatelessWidget {
               ),
               const SizedBox(height: 60),
 
-              // NIM
+              
               const Text(
                 "NIM: 1123150032",
                 style: TextStyle(fontSize: 12, color: Colors.grey),
@@ -85,9 +77,9 @@ class SplashScreen1 extends StatelessWidget {
       ),
     );
   }
+}
 
 
-// 🔘 Widget Indikator Bulat
 class DotIndicator extends StatelessWidget {
   final bool isActive;
   const DotIndicator({super.key, required this.isActive});

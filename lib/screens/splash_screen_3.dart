@@ -39,6 +39,37 @@ class SplashScreen3 extends StatelessWidget {
                   DotIndicator(isActive: true),
                 ],
               ),
+              const SizedBox(height: 40),
+
+              // Tombol Go to Login
+              ElevatedButton(
+                onPressed: () => Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (_) => const LoginPage()),
+                ),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xFFFFE9E0),
+                  foregroundColor: Colors.deepOrange,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
+                  elevation: 1,
+                ),
+                child: const Text(
+                  "Go to Login",
+                  style: TextStyle(fontWeight: FontWeight.w600),
+                ),
+              ),
+
+              const SizedBox(height: 60),
+
+              // NIM di bawah
+              const Text(
+                "NIM: 1123150032",
+                style: TextStyle(fontSize: 12, color: Colors.grey),
+              ),
             ],
           ),
         ),

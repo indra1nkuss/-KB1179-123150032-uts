@@ -30,10 +30,40 @@ class SplashScreen3 extends StatelessWidget {
                 style: TextStyle(fontSize: 16, color: Colors.black54),
               ),
               const SizedBox(height: 24),
-
+                 // 🔘 Indikator bulat (halaman ketiga aktif)
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  DotIndicator(isActive: false),
+                  DotIndicator(isActive: false),
+                  DotIndicator(isActive: true),
+                ],
+              ),
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+
+// 🔘 Widget indikator bulat reusable
+class DotIndicator extends StatelessWidget {
+  final bool isActive;
+  const DotIndicator({super.key, required this.isActive});
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 300),
+      margin: const EdgeInsets.symmetric(horizontal: 4),
+      width: isActive ? 12 : 8,
+      height: isActive ? 12 : 8,
+      decoration: BoxDecoration(
+        color:
+            isActive ? Colors.deepOrange : Colors.deepOrange.withOpacity(0.3),
+        shape: BoxShape.circle,
       ),
     );
   }

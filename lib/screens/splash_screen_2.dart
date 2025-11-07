@@ -13,7 +13,22 @@ class SplashScreen2 extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
-              Text("Splash Screen 2 Layout"),
+            CircleAvatar(
+                radius: 80,
+                backgroundColor: Color(0xFFFFE5D4),
+                backgroundImage: AssetImage("assets/images/splash2.png"),
+              ),
+              SizedBox(height: 24),
+              Text(
+                "Welcome",
+                style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+              ),
+              SizedBox(height: 8),
+              Text(
+                "Stay positive and keep moving!",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 16, color: Colors.black54),
+              ),
             ],
           ),
         ),

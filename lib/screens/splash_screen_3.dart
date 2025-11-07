@@ -18,6 +18,19 @@ class SplashScreen3 extends StatelessWidget {
                 backgroundColor: Color(0xFFFFE5D4),
                 backgroundImage: AssetImage("assets/images/splash3.png"),
               ),
+               // Judul dan teks
+              const Text(
+                "Welcome",
+                style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 8),
+              const Text(
+                "Success comes from consistency.",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 16, color: Colors.black54),
+              ),
+              const SizedBox(height: 24),
+
             ],
           ),
         ),

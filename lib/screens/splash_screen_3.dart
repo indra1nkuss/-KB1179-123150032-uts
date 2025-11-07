@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'login_page.dart';
 
+// ✅ SplashScreen3 dengan indikator bulat (halaman ke-3 aktif)
 class SplashScreen3 extends StatelessWidget {
   const SplashScreen3({super.key});
 
@@ -12,13 +14,16 @@ class SplashScreen3 extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 24),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              CircleAvatar(
+            children: [
+              // Gambar lingkaran
+              const CircleAvatar(
                 radius: 80,
                 backgroundColor: Color(0xFFFFE5D4),
                 backgroundImage: AssetImage("assets/images/splash3.png"),
               ),
-               // Judul dan teks
+              const SizedBox(height: 24),
+
+              // Judul dan teks
               const Text(
                 "Welcome",
                 style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
@@ -30,7 +35,8 @@ class SplashScreen3 extends StatelessWidget {
                 style: TextStyle(fontSize: 16, color: Colors.black54),
               ),
               const SizedBox(height: 24),
-                 // 🔘 Indikator bulat (halaman ketiga aktif)
+
+              // 🔘 Indikator bulat (halaman ketiga aktif)
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
@@ -77,7 +83,6 @@ class SplashScreen3 extends StatelessWidget {
     );
   }
 }
-
 
 // 🔘 Widget indikator bulat reusable
 class DotIndicator extends StatelessWidget {

@@ -1,16 +1,35 @@
-# ujian_indra_1123150032
+# Aplikasi Flutter - Membuat Tampilan Splash Screen & Login Page
 
-A new Flutter project.
+# Identitas
+**Nama:** [Indra Nurul Kusuma]  
+**NIM:** 1123150032  
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Hasil Screenshot
 
-A few resources to get you started if this is your first Flutter project:
+### Halaman Splash Screen 1
+![Tampilan Login](assets/images/screenshoot/Splashscreen1.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Halaman Splash Screen 2
+![Tampilan Login](assets/images/screenshoot/Splashscreen2.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Halaman Splash Screen 3
+![Tampilan Login](assets/images/screenshoot/Splashscreen3.png)
+
+### Halaman Page Login
+![Tampilan Login](assets/images/screenshoot/Pagelogin.png)
+
+
+---
+
+## Cara Menjalankan Project
+
+1. Buka project ini di **Visual Studio Code**.  
+2. Pastikan kamu sudah menjalankan **ispect** sebagai simulator.  
+3. Klik menu **Toggle Device** → pilih tampilan **Mobile** (misal: Pixel 7, iPhone 14, dll).  
+4. Tekan tombol **Run ▶️** di pojok kanan atas, atau jalankan lewat terminal:
+   bash
+   flutter run
+ ## Catatan Kendala
+    Sedikit notice aja pak karena disini bukan kendala yang bisa menyebabkan aplikasi tidak bisa berjalan tetapi untuk ditampilkan seperti ini sangat mengganggu yaitu terkait pas ngetes tampilan halaman Login, muncul tulisan kuning di bawah: “BOTTOM OVERFLOWED BY 102 PIXELS”

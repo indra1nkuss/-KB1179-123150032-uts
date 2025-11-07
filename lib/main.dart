@@ -13,13 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: nim, // 👈 Judul aplikasi diambil dari NIM kamu
+      title: nim, 
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
       ),
-      home: const SplashScreen1(), // Halaman pertama
+      home: const SplashScreen1(), 
     );
   }
 }

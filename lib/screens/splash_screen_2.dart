@@ -36,3 +36,25 @@ class SplashScreen2 extends StatelessWidget {
     );
   }
 }
+
+
+// 🔘 Widget indikator bulat
+class DotIndicator extends StatelessWidget {
+  final bool isActive;
+  const DotIndicator({super.key, required this.isActive});
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 300),
+      margin: const EdgeInsets.symmetric(horizontal: 4),
+      width: isActive ? 12 : 8,
+      height: isActive ? 12 : 8,
+      decoration: BoxDecoration(
+        color:
+            isActive ? Colors.deepOrange : Colors.deepOrange.withOpacity(0.3),
+        shape: BoxShape.circle,
+      ),
+    );
+  }
+}

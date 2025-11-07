@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'splash_screen_2.dart';
 
 class SplashScreen1 extends StatelessWidget {
   const SplashScreen1({super.key});
@@ -12,8 +13,28 @@ class SplashScreen1 extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 24),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              Text("Splash Screen Layout"),
+            children: [
+              // Gambar lingkaran
+              const CircleAvatar(
+                radius: 80,
+                backgroundColor: Color(0xFFFFD9CC),
+                backgroundImage: AssetImage("assets/images/splash1.png"),
+              ),
+              const SizedBox(height: 24),
+
+              // Judul & deskripsi
+              const Text(
+                "Welcome",
+                style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 8),
+              const Text(
+                "Don't forget to learn everyday!",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 16, color: Colors.black54),
+              ),
+              const SizedBox(height: 24),
+          
             ],
           ),
         ),
